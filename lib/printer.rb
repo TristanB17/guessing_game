@@ -48,7 +48,8 @@ module Printer
   def victory_text
     puts "\e[H\e[2J"
     puts "\nYou done did it. You gone and done it. You guessed right!\n"\
-    "The answer is #{@random_number}. Press (q) to quit or (p) to play again."
+    "The answer is #{@random_number}, and it only took you #{@guess_number} guess#{'es' if @guess_number > 1}."
+    puts "Press (q) to quit or (p) to play again."
   end
 
 end
